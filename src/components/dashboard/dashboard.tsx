@@ -48,7 +48,6 @@ const Dashboard: React.FC = () => {
 
     } catch (error) {
       console.error('Failed to fetch data:', error);
-      // Handle token expiration or unauthorized access by logging out
       logout();
     } finally {
       setIsLoading(false);

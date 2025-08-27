@@ -12,7 +12,7 @@ const AuthForm: React.FC<{ isLogin: boolean; onLogin: (data: any) => void; onReg
 
     if (isLogin) {
       if (!username || !password) {
-        setError('Username and password are required.');
+        setError('Username/ password is required.');
         return;
       }
       try {

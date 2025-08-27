@@ -8,7 +8,6 @@ const LoginPage: React.FC = () => {
   const [isLoginMode, setIsLoginMode] = useState(true);
 
   const handleAuthSuccess = (data: any) => {
-    // Assuming the API returns a user object on registration for immediate login
     login(data.token, data.user || data);
   };
 

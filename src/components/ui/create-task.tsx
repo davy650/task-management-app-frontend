@@ -18,7 +18,7 @@ const CreateTaskModal: React.FC<{ isOpen: boolean; onClose: () => void; onTaskCr
       priority,
       status: 'Todo',
       assignedTo,
-      creatorId: 1 // This will be ignored by the backend, as it uses the JWT claim
+      creatorId: 1 
     };
 
     console.log(JSON.stringify(newTask));
