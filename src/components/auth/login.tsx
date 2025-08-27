@@ -1,4 +1,6 @@
 "use client";
+import { AuthForm } from "@/components/auth/auth-form";
+import { useAuth } from "@/components/auth/use-auth";
 import { useState } from "react";
 
 const LoginPage: React.FC = () => {
@@ -28,3 +30,5 @@ const LoginPage: React.FC = () => {
     </div>
   );
 };
+
+export { LoginPage }
