@@ -1,10 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TaskManagement Frontend Application
+
+This project contains a React project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app), with [Tailwind CSS](https://tailwindcss.com/). This project is a front end interface to this [.NET backend API](https://github.com/davy650/task-management-app) project which is part of this project.
 
 ## Getting Started
 
-First, run the development server:
+Given that you will already downloaded and set up this [.NET backend Project](https://github.com/davy650/task-management-app), please proceed and clone this project
+
+```
+git clone https://github.com/davy650/task-management-app.git
+cd to-source-dir
+```
+
+
+
+then run the development server:
 
 ```bash
+# first
+# ----------
+npm install 
+
+# then
+# --------
 npm run dev
 # or
 yarn dev
@@ -12,25 +29,11 @@ yarn dev
 pnpm dev
 # or
 bun dev
+
+# then update your environment/.env with this setting, containing url to backend API
+NEXT_PUBLIC_BASE_API_URL='http://localhost:5218'
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser, login with the user created from [this project](https://github.com/davy650/task-management-app.git) and proceed to add/ manage some tasks
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+have fun :)
